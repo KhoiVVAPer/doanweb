@@ -1,0 +1,97 @@
+﻿@model IEnumerable<QLHD.Models.Event>
+
+@{
+    ViewBag.Title = "DSHD";
+    Layout = "~/Views/Shared/index.cshtml";
+    
+}
+
+<h2>DANH SÁCH HOẠT ĐỘNG</h2>
+
+
+
+<script>
+                function myFunction() {
+                    document.getElementById("demo").innerHTML = "Đã đăng ký thành công";
+                }
+</script>
+<table style="margin-top:10px" class="table table-sm" border="1" >
+    <thead>
+    <tr >
+        <th style="width:500px">
+            TÊN HOẠT ĐỘNG
+        </th>
+        <th style="width:200px">
+            NGÀY BẮT ĐẦU ĐĂNG KÝ
+        </th>
+        <th style="width:200px">
+            NGÀY KẾT THÚC ĐĂNG KÝ
+        </th>
+        <th style="width:200px">
+            SỐ LƯỢNG ĐƯỢC ĐĂNG KÝ
+        </th>
+        <th style="width:200px">
+            SỐ LƯỢNG ĐÃ ĐĂNG KÝ
+        </th>
+        <th style="width:200px">
+            SỐ LƯỢNG ĐÃ THAM GIA
+        </th>
+        <th style="width:200px">
+            TRẠNG THÁI
+        </th>
+        <th style="width:250px">THỰC HIỆN</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @if (item.dateRegister >= DateTime.Now && item.dateEndRegister <= DateTime.Now)
+            {
+                <a style="text-decoration:none;color:lightgreen" href="@Url.Action("ChiTietHoatDong", "Admin", new { id = item.idEvent })">@item.eventName</a>
+            }
+            else
+            {
+                <a style="text-decoration:none;color:darkgray;pointer-events:none;cursor:default">@item.eventName</a>
+            }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateRegister)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateEndRegister)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.studentNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Registation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Attendant)
+        </td>
+        <td>
+            @if (item.dateRegister >= DateTime.Now && item.dateEndRegister <= DateTime.Now)
+            {
+                <p style="color:white; text-align:center;display:block;background-color:darkgreen;border-radius:13px 13px;font-size:12px">Đang mở đăng ký</p>
+            }
+            else{ 
+            
+                <p style="color:white; text-align:center;display:block;background-color:darkgray;border-radius:13px 13px;font-size:12px">Đã đóng đăng ký</p>
+            }
+            
+        </td>
+        <td>
+            <a href=" @Url.Action("Edit", "Admin", new { id = item.idEvent } )" > <span class="glyphicon glyphicon-pencil"></span></a> |
+            <a href=" @Url.Action("Details", "Admin", new { id = item.idEvent })" > <span class="glyphicon glyphicon-list-alt"></span></a> |
+            <a href="@Url.Action("Delete","Admin" ,new { id = item.idEvent })"><span class="glyphicon glyphicon-remove"></span></a>
+        </td>
+    </tr>
+}
+        </tbody>
+       </table>
+    <a class="themhoatdong" href="@Url.Action("ThemMoiHD", "Admin")"><span class="glyphicon glyphicon-plus-sign" style="color:white;font-size:20px"></span><p style="font-size:20px">THÊM HOẠT ĐỘNG</p></a>
+<p id="demo"></p>
+

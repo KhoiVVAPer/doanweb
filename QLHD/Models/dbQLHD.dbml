@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLHD" Class="dbQLHDDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=DESKTOP-NHUIAUC\PHAT;Initial Catalog=QLHD;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="QLHDConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Account" Member="Accounts">
+    <Type Name="Account">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="displayName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="passWord" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="idPermission" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Student_Account" Member="Student" ThisKey="userName" OtherKey="idStudent" Type="Student" IsForeignKey="true" />
+      <Association Name="Permission_Account" Member="Permission" ThisKey="idPermission" OtherKey="idPermission" Type="Permission" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Student" Member="Students">
+    <Type Name="Student">
+      <Column Name="idStudent" Type="System.String" DbType="NVarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="dob" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="idClass" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idCourse" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idType" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="idFalcuty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="andress" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="Student_Account" Member="Accounts" ThisKey="idStudent" OtherKey="userName" Type="Account" />
+      <Association Name="Student_EventStudentList" Member="EventStudentLists" ThisKey="idStudent" OtherKey="idStudent" Type="EventStudentList" />
+      <Association Name="Class_Student" Member="Class" ThisKey="idClass" OtherKey="idClass" Type="Class" IsForeignKey="true" />
+      <Association Name="Course_Student" Member="Course" ThisKey="idCourse" OtherKey="idCourse" Type="Course" IsForeignKey="true" />
+      <Association Name="Falcuty_Student" Member="Falcuty" ThisKey="idFalcuty" OtherKey="idFalcuty" Type="Falcuty" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Class" Member="Classes">
+    <Type Name="Class">
+      <Column Name="idClass" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="idfalcuty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idCourse" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Class_Student" Member="Students" ThisKey="idClass" OtherKey="idClass" Type="Student" />
+      <Association Name="Class_Event" Member="Events" ThisKey="idClass" OtherKey="idClass" Type="Event" />
+      <Association Name="Course_Class" Member="Course" ThisKey="idCourse" OtherKey="idCourse" Type="Course" IsForeignKey="true" />
+      <Association Name="Falcuty_Class" Member="Falcuty" ThisKey="idfalcuty" OtherKey="idFalcuty" Type="Falcuty" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Course" Member="Courses">
+    <Type Name="Course">
+      <Column Name="idCourse" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="YearStart" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YearEnd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Course_Student" Member="Students" ThisKey="idCourse" OtherKey="idCourse" Type="Student" />
+      <Association Name="Course_Class" Member="Classes" ThisKey="idCourse" OtherKey="idCourse" Type="Class" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Event" Member="Events">
+    <Type Name="Event">
+      <Column Name="idEvent" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="eventName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="content" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="dateRegister" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="dateEndRegister" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="dateStart" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="dateEnd" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="idEventType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idOganizer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idSemester" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idFalcuty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idClass" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="studentNumber" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Registation" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Attendant" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Event_EventStudentList" Member="EventStudentLists" ThisKey="idEvent" OtherKey="idEvent" Type="EventStudentList" />
+      <Association Name="Class_Event" Member="Class" ThisKey="idClass" OtherKey="idClass" Type="Class" IsForeignKey="true" />
+      <Association Name="EventType_Event" Member="EventType" ThisKey="idEventType" OtherKey="idEventType" Type="EventType" IsForeignKey="true" />
+      <Association Name="Falcuty_Event" Member="Falcuty" ThisKey="idFalcuty" OtherKey="idFalcuty" Type="Falcuty" IsForeignKey="true" />
+      <Association Name="Oganizer_Event" Member="Oganizer" ThisKey="idOganizer" OtherKey="idOganizer" Type="Oganizer" IsForeignKey="true" />
+      <Association Name="Semester_Event" Member="Semester" ThisKey="idSemester" OtherKey="idSemester" Type="Semester" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventStudentList" Member="EventStudentLists">
+    <Type Name="EventStudentList">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="idEvent" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idStudent" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="ClassConfirmed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FalcutyConfirmed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Event_EventStudentList" Member="Event" ThisKey="idEvent" OtherKey="idEvent" Type="Event" IsForeignKey="true" />
+      <Association Name="Student_EventStudentList" Member="Student" ThisKey="idStudent" OtherKey="idStudent" Type="Student" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EventType" Member="EventTypes">
+    <Type Name="EventType">
+      <Column Name="idEventType" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="typename" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="EventType_Event" Member="Events" ThisKey="idEventType" OtherKey="idEventType" Type="Event" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Falcuty" Member="Falcuties">
+    <Type Name="Falcuty">
+      <Column Name="idFalcuty" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Falcuty_Student" Member="Students" ThisKey="idFalcuty" OtherKey="idFalcuty" Type="Student" />
+      <Association Name="Falcuty_Class" Member="Classes" ThisKey="idFalcuty" OtherKey="idfalcuty" Type="Class" />
+      <Association Name="Falcuty_Event" Member="Events" ThisKey="idFalcuty" OtherKey="idFalcuty" Type="Event" />
+      <Association Name="Falcuty_Staff" Member="Staffs" ThisKey="idFalcuty" OtherKey="idFalcuty" Type="Staff" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Oganizer" Member="Oganizers">
+    <Type Name="Oganizer">
+      <Column Name="idOganizer" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Oganizer_Event" Member="Events" ThisKey="idOganizer" OtherKey="idOganizer" Type="Event" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Permission" Member="Permissions">
+    <Type Name="Permission">
+      <Column Name="idPermission" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Association Name="Permission_Account" Member="Accounts" ThisKey="idPermission" OtherKey="idPermission" Type="Account" />
+      <Association Name="Permission_Staff" Member="Staffs" ThisKey="idPermission" OtherKey="idPermission" Type="Staff" />
+      <Association Name="Permission_StaffAccount" Member="StaffAccounts" ThisKey="idPermission" OtherKey="idPermission" Type="StaffAccount" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Semester" Member="Semesters">
+    <Type Name="Semester">
+      <Column Name="idSemester" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dateStart" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dateEnd" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Semester_Event" Member="Events" ThisKey="idSemester" OtherKey="idSemester" Type="Event" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Staff" Member="Staffs">
+    <Type Name="Staff">
+      <Column Name="idStaff" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="picture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="dob" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="andress" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="phone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="idPermission" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idFalcuty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Staff_StaffAccount" Member="StaffAccounts" ThisKey="idStaff" OtherKey="idStaff" Type="StaffAccount" />
+      <Association Name="Falcuty_Staff" Member="Falcuty" ThisKey="idFalcuty" OtherKey="idFalcuty" Type="Falcuty" IsForeignKey="true" />
+      <Association Name="Permission_Staff" Member="Permission" ThisKey="idPermission" OtherKey="idPermission" Type="Permission" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StaffAccount" Member="StaffAccounts">
+    <Type Name="StaffAccount">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="userName" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="displayName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="passWord" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="idPermission" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idStaff" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Permission_StaffAccount" Member="Permission" ThisKey="idPermission" OtherKey="idPermission" Type="Permission" IsForeignKey="true" />
+      <Association Name="Staff_StaffAccount" Member="Staff" ThisKey="idStaff" OtherKey="idStaff" Type="Staff" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

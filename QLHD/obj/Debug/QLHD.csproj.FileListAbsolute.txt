@@ -1,0 +1,246 @@
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\ApplicationInsights.config
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\csc.exe
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\System.Collections.Immutable.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\vbc.exe
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\VBCSCompiler.exe
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\roslyn\VBCSCompiler.exe.config
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\QLHD.dll.config
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\QLHD.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\QLHD.pdb
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Antlr3.Runtime.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\EntityFramework.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\EntityFramework.SqlServer.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.Web.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.WindowsServer.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.ApplicationInsights.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.Google.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Web.Infrastructure.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Newtonsoft.Json.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Owin.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.Helpers.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.Mvc.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.Optimization.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.Razor.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.WebPages.Deployment.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.WebPages.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.WebPages.Razor.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\WebGrease.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.Web.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AI.WindowsServer.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.ApplicationInsights.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.Helpers.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.Mvc.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.Optimization.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.Razor.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.WebPages.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.WebPages.Deployment.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\System.Web.WebPages.Razor.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Antlr3.Runtime.pdb
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Newtonsoft.Json.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\EntityFramework.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\EntityFramework.SqlServer.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.Google.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\obj\Debug\QLHD.csprojResolveAssemblyReference.cache
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\obj\Debug\QLHD.dll
+c:\users\phat\documents\visual studio 2015\Projects\QLHD\QLHD\obj\Debug\QLHD.pdb
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\ApplicationInsights.config
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\csc.exe
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\vbc.exe
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\VBCSCompiler.exe
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\QLHD.dll.config
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\QLHD.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\QLHD.pdb
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Antlr3.Runtime.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\EntityFramework.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\EntityFramework.SqlServer.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.Web.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Newtonsoft.Json.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Owin.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.Helpers.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.Mvc.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.Optimization.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.Razor.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.WebPages.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.WebPages.Razor.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\WebGrease.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.Web.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.Helpers.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.Mvc.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.Optimization.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.Razor.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.WebPages.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\System.Web.WebPages.Razor.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Antlr3.Runtime.pdb
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Newtonsoft.Json.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\EntityFramework.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\EntityFramework.SqlServer.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\obj\Debug\QLHD.csprojResolveAssemblyReference.cache
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\obj\Debug\QLHD.dll
+C:\Users\Phat\Desktop\doanltw\laptrinhweb\QLHD\QLHD\obj\Debug\QLHD.pdb
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\ApplicationInsights.config
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\csc.exe
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\vbc.exe
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\VBCSCompiler.exe
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\QLHD.dll.config
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\QLHD.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\QLHD.pdb
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Antlr3.Runtime.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\EntityFramework.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\EntityFramework.SqlServer.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.Web.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Newtonsoft.Json.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Owin.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.Helpers.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.Mvc.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.Optimization.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.Razor.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.WebPages.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.WebPages.Razor.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\WebGrease.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.Web.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.Helpers.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.Mvc.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.Optimization.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.Razor.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.WebPages.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\System.Web.WebPages.Razor.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Antlr3.Runtime.pdb
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Newtonsoft.Json.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\EntityFramework.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\EntityFramework.SqlServer.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\obj\Debug\QLHD.csprojResolveAssemblyReference.cache
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\obj\Debug\QLHD.dll
+C:\Users\Phat\Documents\Visual Studio 2015\Projects\QLHD\doanweb\QLHD\obj\Debug\QLHD.pdb

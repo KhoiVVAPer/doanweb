@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trang chủ</title>
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Pacifico|Rubik|Play|Arsenal|Fredericka+the+Great|Merriweather|Baloo+Chettan" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/app.js"></script>
+
+    <link href="~/Content/style.css" rel="stylesheet" />
+
+</head>
+<body>
+	<div class="page-wrapper" style="background-color:white">
+		<header class="main-header">
+			<div class="logo-section">
+				<p>Hutech</p>
+				<div class="menu-toggle">
+					<a class="menu-active">
+						<span class="glyphicon glyphicon-list"></span>
+					</a>
+				</div>
+			</div>
+			<div class="login-section">
+				<a href="#" class="user-login">
+					<span class="glyphicon glyphicon-user"></span>
+				</a>
+			</div>
+		</header>
+		<div class="page-slidebar-wrapper">
+			<ul class="slidebar-menu">
+				<li class="slidebar-menu-item">
+					<a href="#">
+						<span id="trangchu" class="glyphicon glyphicon-home"></span><p>Trang chủ</p>
+					</a>
+				</li>
+				<li class="slidebar-menu-item has-sub-menu">
+					<a>
+						<span class="glyphicon glyphicon-edit"></span><p>Hoạt động</p>
+						<span class="glyphicon glyphicon-chevron-left arrow"></span>
+					</a>
+					<ul class="slidebar-sub-menu">
+						<li><a href="/Admin/DSHD">Danh sách hoạt động</a></li>
+						<li><a href="#">Hoạt động đã tham gia</a></li>
+						<li><a href="#">Đánh giá hoạt động</a></li>
+					</ul>
+				</li>
+				<li class="slidebar-menu-item">
+					<a href="#">
+						<span class="glyphicon glyphicon-education"></span><p>Học vụ</p>
+					</a>
+				</li>
+				<li class="slidebar-menu-item">
+					<a href="#">
+						<span class="glyphicon glyphicon-user"></span><p>Thông tin tài khoản</p>
+					</a>
+				</li>
+				<li class="slidebar-menu-item">
+					<a href="#">
+						<span class="glyphicon glyphicon-cog"></span><p>Hổ trợ</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+        <div class="page-content-wrapper">
+                @RenderBody()
+              
+            </div>
+        </div>
+	</div>
+</body>
+</html>
