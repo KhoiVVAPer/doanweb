@@ -133,7 +133,7 @@ namespace QLHD.Models
 			}
 		}
 		
-		public System.Data.Linq.Table<Event> Event
+		public System.Data.Linq.Table<Event> Events
 		{
 			get
 			{
@@ -357,7 +357,7 @@ namespace QLHD.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Student_Account", Storage="_Student", ThisKey="userName", OtherKey="idStudent", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Student_Account", Storage="_Student", ThisKey="userName", OtherKey="idStudent", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public Student Student
 		{
 			get
@@ -968,7 +968,7 @@ namespace QLHD.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="NVarChar(10) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_name", DbType="NVarChar(10)")]
 		public string name
 		{
 			get
@@ -2171,7 +2171,7 @@ namespace QLHD.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Event_EventStudentList", Storage="_Event", ThisKey="idEvent", OtherKey="idEvent", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Event_EventStudentList", Storage="_Event", ThisKey="idEvent", OtherKey="idEvent", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
 		public Event Event
 		{
 			get
@@ -3028,8 +3028,6 @@ namespace QLHD.Models
 		
 		private string _name;
 		
-		private System.Data.Linq.Binary _picture;
-		
 		private System.Nullable<System.DateTime> _dob;
 		
 		private string _andress;
@@ -3039,6 +3037,8 @@ namespace QLHD.Models
 		private System.Nullable<int> _idPermission;
 		
 		private System.Nullable<int> _idFalcuty;
+		
+		private string _picture;
 		
 		private EntitySet<StaffAccount> _StaffAccounts;
 		
@@ -3054,8 +3054,6 @@ namespace QLHD.Models
     partial void OnidStaffChanged();
     partial void OnnameChanging(string value);
     partial void OnnameChanged();
-    partial void OnpictureChanging(System.Data.Linq.Binary value);
-    partial void OnpictureChanged();
     partial void OndobChanging(System.Nullable<System.DateTime> value);
     partial void OndobChanged();
     partial void OnandressChanging(string value);
@@ -3066,6 +3064,8 @@ namespace QLHD.Models
     partial void OnidPermissionChanged();
     partial void OnidFalcutyChanging(System.Nullable<int> value);
     partial void OnidFalcutyChanged();
+    partial void OnpictureChanging(string value);
+    partial void OnpictureChanged();
     #endregion
 		
 		public Staff()
@@ -3112,26 +3112,6 @@ namespace QLHD.Models
 					this._name = value;
 					this.SendPropertyChanged("name");
 					this.OnnameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="Image", UpdateCheck=UpdateCheck.Never)]
-		public System.Data.Linq.Binary picture
-		{
-			get
-			{
-				return this._picture;
-			}
-			set
-			{
-				if ((this._picture != value))
-				{
-					this.OnpictureChanging(value);
-					this.SendPropertyChanging();
-					this._picture = value;
-					this.SendPropertyChanged("picture");
-					this.OnpictureChanged();
 				}
 			}
 		}
@@ -3240,6 +3220,26 @@ namespace QLHD.Models
 					this._idFalcuty = value;
 					this.SendPropertyChanged("idFalcuty");
 					this.OnidFalcutyChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_picture", DbType="VarChar(30)")]
+		public string picture
+		{
+			get
+			{
+				return this._picture;
+			}
+			set
+			{
+				if ((this._picture != value))
+				{
+					this.OnpictureChanging(value);
+					this.SendPropertyChanging();
+					this._picture = value;
+					this.SendPropertyChanged("picture");
+					this.OnpictureChanged();
 				}
 			}
 		}

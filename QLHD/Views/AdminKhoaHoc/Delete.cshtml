@@ -1,0 +1,51 @@
+﻿@model QLHD.Models.Course
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>XÓA KHÓA HỌC</h2>
+
+<h3>Bạn chắc chắn muốn xóa khóa học này?</h3>
+@ViewBag.Loi
+<div class="Delete">
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã khóa học
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idCourse)
+        </dd>
+        <dt>
+            Năm bắt đầu
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearStart)
+        </dd>
+
+        <dt>
+            Năm kết thúc
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearEnd)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xác nhận xóa" class="btn btn-default" style="background-color:lightseagreen;color:white;font-family:Tahoma;margin-left:450px" />
+        </div>
+        <p></p>
+        <div class="EditBack">
+            <a class="Back" href="@Url.Action("Index","AdminKhoaHoc")"><span class="glyphicon glyphicon-circle-arrow-left"></span><p>TRỞ VỀ</p></a>
+        </div>
+    }
+</div>

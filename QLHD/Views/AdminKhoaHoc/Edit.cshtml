@@ -1,0 +1,50 @@
+﻿@model QLHD.Models.Course
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>CHỈNH SỬA KHÓA HỌC</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.idCourse)
+        <div class="form-group">
+            <label class="control-label col-md-2">Mã khóa học</label>
+            <div class="col-md-10" style="padding-top:8px">
+                @Model.idCourse
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Năm bắt đầu</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.YearStart, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.YearStart, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Năm kết thúc</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.YearEnd, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.YearEnd, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input id="Luu" type="submit" value="Lưu" class="btn btn-default" style="background-color:lightseagreen;color:white;font-family:Tahoma;" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="EditBack">
+    <a class="Back" href="@Url.Action("Index","AdminKhoaHoc")"><span class="glyphicon glyphicon-circle-arrow-left"></span><p>TRỞ VỀ</p></a>
+</div>

@@ -1,0 +1,44 @@
+﻿@model IEnumerable<QLHD.Models.Course>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>DANH SÁCH KHÓA HỌC</h2>
+
+<a class="themhoatdong" href="@Url.Action("Create", "AdminKhoaHoc")"><span class="glyphicon glyphicon-plus-sign"></span><p> THÊM KHÓA HỌC</p></a>
+<table style="margin-top:10px" class="table table-sm" border="1">
+    <tr>
+        <th>
+            Mã khóa học
+        </th>
+        <th>
+            Năm bắt đầu
+        </th>
+        <th>
+            Năm kết thúc
+        </th>
+        <th>Thực hiện</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idCourse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearStart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.YearEnd)
+        </td>
+        <td class="Action">
+            <a class="Sua" href=" @Url.Action("Edit", "AdminKhoaHoc", new { idCourse = item.idCourse })" style="display:inline-block;border-radius:5px 5px; background-color:lawngreen;color:white;width:20px"><span class="glyphicon glyphicon-pencil"></span></a> |
+            <a class="Chitiet" href=" @Url.Action("Details", "AdminKhoaHoc", new { idCourse = item.idCourse })" style="display:inline-block;border-radius:5px 5px;background-color:orange;color:white;width:20px"><span class="glyphicon glyphicon-list-alt"></span></a> |
+            <a class="Xoa" href="@Url.Action("Delete","AdminKhoaHoc" ,new { idCourse = item.idCourse })" style="display:inline-block;border-radius:5px 5px;background-color:red;color:white;width:20px"><span class="glyphicon glyphicon-remove"></span></a>
+        </td>
+    </tr>
+}
+
+</table>

@@ -7,7 +7,7 @@
       <Column Name="displayName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
       <Column Name="passWord" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="idPermission" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="Student_Account" Member="Student" ThisKey="userName" OtherKey="idStudent" Type="Student" IsForeignKey="true" />
+      <Association Name="Student_Account" Member="Student" ThisKey="userName" OtherKey="idStudent" Type="Student" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
       <Association Name="Permission_Account" Member="Permission" ThisKey="idPermission" OtherKey="idPermission" Type="Permission" IsForeignKey="true" />
     </Type>
   </Table>
@@ -33,7 +33,7 @@
   <Table Name="dbo.Class" Member="Classes">
     <Type Name="Class">
       <Column Name="idClass" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="name" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
       <Column Name="idfalcuty" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="idCourse" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Association Name="Class_Student" Member="Students" ThisKey="idClass" OtherKey="idClass" Type="Student" />
@@ -85,7 +85,7 @@
       <Column Name="idStudent" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
       <Column Name="ClassConfirmed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="FalcutyConfirmed" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="Event_EventStudentList" Member="Event" ThisKey="idEvent" OtherKey="idEvent" Type="Event" IsForeignKey="true" />
+      <Association Name="Event_EventStudentList" Member="Event" ThisKey="idEvent" OtherKey="idEvent" Type="Event" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
       <Association Name="Student_EventStudentList" Member="Student" ThisKey="idStudent" OtherKey="idStudent" Type="Student" IsForeignKey="true" />
     </Type>
   </Table>
@@ -135,12 +135,12 @@
     <Type Name="Staff">
       <Column Name="idStaff" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="name" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="picture" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Column Name="dob" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="andress" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="phone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="idPermission" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="idFalcuty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="picture" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Association Name="Staff_StaffAccount" Member="StaffAccounts" ThisKey="idStaff" OtherKey="idStaff" Type="StaffAccount" />
       <Association Name="Falcuty_Staff" Member="Falcuty" ThisKey="idFalcuty" OtherKey="idFalcuty" Type="Falcuty" IsForeignKey="true" />
       <Association Name="Permission_Staff" Member="Permission" ThisKey="idPermission" OtherKey="idPermission" Type="Permission" IsForeignKey="true" />

@@ -1,0 +1,104 @@
+﻿@model QLHD.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>THÔNG TIN CHI TIẾT</h2>
+
+<div class="Details">
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            MSSV
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idStudent)
+        </dd>
+         <dt>
+            Họ tên
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            Ngày sinh
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dob)
+        </dd>
+
+        <dt>
+            Lớp
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Class.name)
+        </dd>
+
+        <dt>
+            Khóa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idCourse)
+        </dd>
+
+        <dt>
+            Là ban cán sự?
+        </dt>
+
+        <dd>
+            @if (Model.idType == true)
+            {
+                @Html.Display("Có")
+            }
+            else
+            {
+                @Html.Display("Không")
+            }
+        </dd>
+
+        <dt>
+            Khoa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Falcuty.name)
+        </dd>
+
+        <dt>
+            Địa chỉ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.andress)
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            SDT
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.phone)
+        </dd>
+
+    </dl>
+</div>
+<div class="EditBack">
+    <a class="Edit" href="@Url.Action("Edit", "AdminSV",new { idStudent = Model.idStudent })"><span class="glyphicon glyphicon-pencil"></span><p style="font-size:15px"> ĐIỀU CHỈNH</p></a> |
+    <a class="Back" href="@Url.Action("Index","AdminSV")"><span class="glyphicon glyphicon-circle-arrow-left"></span><p style="font-size:15px"> TRỞ VỀ</p></a>
+</div>

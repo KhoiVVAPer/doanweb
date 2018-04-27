@@ -1,0 +1,101 @@
+﻿@model IEnumerable<QLHD.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>DANH SÁCH SINH VIÊN</h2>
+
+<a class="themhoatdong" href="@Url.Action("Create", "AdminSV")"><span class="glyphicon glyphicon-plus-sign"></span><p> THÊM SINH VIÊN</p></a>
+<table style="margin-top:10px" class="table table-sm" border="1">
+    <thead>
+        <tr>
+            <th>
+                MSSV
+            </th>
+            <th>
+                Họ tên
+            </th>
+            <th>
+                Ngày sinh
+            </th>
+            <th>
+                Lớp
+            </th>
+            <th>
+                Khóa
+            </th>
+            <th style="width:70px">
+                Là ban cán sự?
+            </th>
+            <th>
+                Khoa
+            </th>
+            <th style="width:170px">
+                Địa chỉ
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                SDT
+            </th>
+            <th>Thực hiện</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idStudent)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dob)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Class.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idCourse)
+                </td>
+                <td>
+                    @if (item.idType == true)
+                    {
+                        <p>Có</p>
+                    }
+                    else
+                    {
+                        <p></p>
+                    }
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Falcuty.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.andress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.phone)
+                </td>
+                <td class="Action">
+                    <a class="Sua" href=" @Url.Action("Edit", "AdminSV", new { idStudent = item.idStudent }) " style="display:inline-block;border-radius:5px 5px; background-color:lawngreen;color:white;width:20px"><span class="glyphicon glyphicon-pencil"></span></a> |
+                    <a class="Chitiet" href=" @Url.Action("Details", "AdminSV", new { idStudent = item.idStudent }) " style="display:inline-block;border-radius:5px 5px;background-color:orange;color:white;width:20px"><span class="glyphicon glyphicon-list-alt"></span></a> |
+                    <a class="Xoa" href="@Url.Action("Delete","AdminSV" ,new { idStudent = item.idStudent })" style="display:inline-block;border-radius:5px 5px;background-color:red;color:white;width:20px"><span class="glyphicon glyphicon-remove"></span></a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+

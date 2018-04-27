@@ -1,0 +1,49 @@
+﻿@model IEnumerable<QLHD.Models.Class>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>DANH SÁCH LỚP</h2>
+<a class="themhoatdong" href="@Url.Action("Create", "AdminLop")"><span class="glyphicon glyphicon-plus-sign"></span><p> THÊM LỚP</p></a>
+<table style="margin-top:10px" class="table table-sm" border="1" >
+    <tr>
+        <th>
+            Mã lớp
+        </th>
+        <th>
+            Tên lớp
+        </th>
+        <th>
+            Khoa
+        </th>
+        <th>
+            Khóa
+        </th>
+        <th>Thực hiện</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.idClass)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Falcuty.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.idCourse)
+        </td>
+        <td class="Action">
+            <a class="Sua" href=" @Url.Action("Edit", "AdminLop", new { idClass = item.idClass }) " style="display:inline-block;border-radius:5px 5px; background-color:lawngreen;color:white;width:20px"><span class="glyphicon glyphicon-pencil"></span></a> |
+            <a class="Chitiet" href=" @Url.Action("Details", "AdminLop", new { idClass = item.idClass }) " style="display:inline-block;border-radius:5px 5px;background-color:orange;color:white;width:20px"><span class="glyphicon glyphicon-list-alt"></span></a> |
+            <a class="Xoa" href="@Url.Action("Delete","AdminLop" ,new { idClass = item.idClass })" style="display:inline-block;border-radius:5px 5px;background-color:red;color:white;width:20px"><span class="glyphicon glyphicon-remove"></span></a>
+        </td>
+    </tr>
+}
+
+</table>

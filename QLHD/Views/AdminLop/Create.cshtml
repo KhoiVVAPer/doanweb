@@ -1,0 +1,50 @@
+﻿@model QLHD.Models.Class
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>THÊM LỚP</h2>
+<p></p>
+@ViewData["Error"]
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">Tên lớp</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Khoa</label>
+            <div class="col-md-10">
+                @Html.DropDownList("idfalcuty")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Khóa</label>
+            <div class="col-md-10">
+                @Html.DropDownList("idCourse")
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Xác nhận tạo mới" class="btn btn-default" style="background-color:lightseagreen;color:white;font-family:Tahoma;" />
+            </div>
+        </div>
+    </div>
+}
+
+<div class="EditBack">
+    <a class="Back" href="@Url.Action("Index","AdminLop")"><span class="glyphicon glyphicon-circle-arrow-left"></span><p>TRỞ VỀ</p></a>
+</div>

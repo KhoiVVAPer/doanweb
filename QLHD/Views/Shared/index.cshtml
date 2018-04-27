@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Trang chủ</title>
+	<title>Admin</title>
+    
 	<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Pacifico|Rubik|Play|Arsenal|Fredericka+the+Great|Merriweather|Baloo+Chettan" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="~/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="~/Scripts/app.js"></script>
-
-    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />  
+     <script src="~/Scripts/app.js"></script>
+    
+    
 
 </head>
 <body>
@@ -42,15 +44,24 @@
 					</a>
 					<ul class="slidebar-sub-menu">
 						<li><a href="/Admin/DSHD">Danh sách hoạt động</a></li>
-						<li><a href="#">Hoạt động đã tham gia</a></li>
-						<li><a href="#">Đánh giá hoạt động</a></li>
+
 					</ul>
 				</li>
-				<li class="slidebar-menu-item">
-					<a href="#">
-						<span class="glyphicon glyphicon-education"></span><p>Học vụ</p>
-					</a>
-				</li>
+                <li class="slidebar-menu-item has-sub-menu">
+                    <a>
+                        <span class="glyphicon glyphicon-th"></span><p>Quản lý danh sách</p>
+                        <span class="glyphicon glyphicon-chevron-left arrow"></span>
+                    </a>
+                    <ul class="slidebar-sub-menu">
+                        <li><a href="/AdminSV/Index">Sinh viên</a></li>
+                        <li><a href="/AdminLop/Index">Lớp</a></li>
+                        <li><a href="/AdminKhoaHoc/Index">Khóa</a></li>
+                        <li><a href="/AdminKhoa/Index">Khoa</a></li>
+                        <li><a href="/AdminDVTC/Index">Đơn vị tổ chức</a></li>
+                        <li><a href="/AdminNV/Index">Tài khoản nhân viên</a></li>
+
+                    </ul>
+                </li>
 				<li class="slidebar-menu-item">
 					<a href="#">
 						<span class="glyphicon glyphicon-user"></span><p>Thông tin tài khoản</p>

@@ -1,0 +1,160 @@
+﻿@model QLHD.Models.Event
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>XÓA HOẠT ĐỘNG</h2>
+
+<h3>Bạn có chắc muốn xóa hoạt động này?</h3>
+<div class="Delete">
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã hoạt động
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idEvent)
+        </dd>
+        <dt>
+            Tên hoạt động
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eventName)
+        </dd>
+        <dt>
+            Ngày bắt đầu đăng ký
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateRegister)
+        </dd>
+
+        <dt>
+            Ngày kết thúc đăng ký
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateEndRegister)
+        </dd>
+
+        <dt>
+            Ngày diễn ra
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateStart)
+        </dd>
+
+        <dt>
+            Ngày kết thúc
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateEnd)
+        </dd>
+
+        <dt>
+            Loại hoạt động
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EventType.typename)
+        </dd>
+
+        <dt>
+            Đơn vị tổ chức
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Oganizer.name)
+        </dd>
+
+        <dt>
+            Họ kỳ
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semester.name)
+        </dd>
+
+        <dt>
+            Khoa
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Falcuty.name)
+        </dd>
+
+        <dt>
+            Lớp
+        </dt>
+
+        <dd>
+            @if (Model.Class.name == null)
+            {
+                <p>Trống</p>
+            }
+            else
+            {
+                @Html.DisplayFor(model => model.idClass)
+            }
+
+        </dd>
+
+        <dt>
+            SL cho đăng ký
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.studentNumber)
+        </dd>
+
+        <dt>
+            SL đã đăng ký
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Registation)
+        </dd>
+
+        <dt>
+            SL đã tham gia
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Attendant)
+        </dd>
+
+        <dt>
+            Địa điểm tổ chức
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+        <dt>
+            Nội dung
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.content)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xác nhận xóa" class="btn btn-default"  style="background-color:lightseagreen;color:white;font-family:Tahoma;margin-left:450px"/>
+        </div>
+        <p></p>
+        <div class="EditBack">
+            <a class="Back" href="@Url.Action("DSHD","Admin")"><span class="glyphicon glyphicon-circle-arrow-left"></span><p>TRỞ VỀ</p></a>
+        </div>
+    }
+</div>

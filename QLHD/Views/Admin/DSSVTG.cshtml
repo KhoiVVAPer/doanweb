@@ -1,0 +1,94 @@
+﻿@model IEnumerable<QLHD.ViewModel.DSSVTGViewModel>
+ 
+@{
+    ViewBag.Title = "DSSVTG";
+    Layout = "~/Views/Shared/index.cshtml";
+}
+
+<h2>DANH SÁCH SINH VIÊN THAM GIA</h2>
+
+
+@{
+    int i = 0;
+}
+
+<table class="table">
+    <tr>
+        <th>
+            STT
+        </th>
+        <th>
+            MSSV
+        </th>
+        <th>
+            Họ tên
+        </th>
+        <th>
+            Ngày sinh
+        </th>
+        <th>
+            Lớp
+        </th>
+        <th>
+            Khoa
+        </th>
+        <th>
+            Địa chỉ
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            SDT
+        </th>
+        <th>
+            Đã tham gia?
+        </th>
+    </tr>
+    @foreach (var item in Model)
+            {
+        <tr>
+            <td>
+                @{
+                    i = i + 1;
+                }
+                @i
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.lop)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.khoa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.diachi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.sdt)
+            </td>
+            <td>
+                
+                <a class="Sua" href="@Url.Action("EditSV", "Admin", new { idStudent = item.id })" style="display:inline-block;border-radius:5px 5px; background-color:lawngreen;color:white;width:80px;text-decoration:none"><span class="glyphicon glyphicon-pencil"></span>Cập nhật</a>
+                
+            </td>
+        </tr>
+                    }
+
+</table>
+
+
+
+
+

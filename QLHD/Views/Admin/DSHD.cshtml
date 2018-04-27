@@ -10,11 +10,8 @@
 
 
 
-<script>
-                function myFunction() {
-                    document.getElementById("demo").innerHTML = "Đã đăng ký thành công";
-                }
-</script>
+<a class="themhoatdong" href="@Url.Action("Create", "Admin")"><span class="glyphicon glyphicon-plus-sign"></span><p> THÊM HOẠT ĐỘNG</p></a>
+
 <table style="margin-top:10px" class="table table-sm" border="1" >
     <thead>
     <tr >
@@ -48,13 +45,22 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @if (item.dateRegister >= DateTime.Now && item.dateEndRegister <= DateTime.Now)
+            @if (item.dateRegister.ToShortDateString().CompareTo(DateTime.Now.ToShortDateString()) <= 0 && item.dateEndRegister.ToShortDateString().CompareTo(DateTime.Now.ToShortDateString()) >= 0)
             {
-                <a style="text-decoration:none;color:lightgreen" href="@Url.Action("ChiTietHoatDong", "Admin", new { id = item.idEvent })">@item.eventName</a>
+                <a style="text-decoration:none;color:forestgreen;font-weight:bold" href="@Url.Action("Details", "Admin", new { id = item.idEvent })">@item.eventName</a>
             }
             else
             {
-                <a style="text-decoration:none;color:darkgray;pointer-events:none;cursor:default">@item.eventName</a>
+                if (item.dateEndRegister.ToShortDateString().CompareTo(DateTime.Now.ToShortDateString()) < 0)
+                {
+                    <a style="text-decoration:none;color:darkgray;font-weight: bold" href="@Url.Action("Details", "Admin", new { id = item.idEvent })">@item.eventName</a>
+
+                }
+                else
+                {
+                    <a style="text-decoration:none;color:cornflowerblue;font-weight: bold" href="@Url.Action("Details", "Admin", new { id = item.idEvent })">@item.eventName</a>
+                }
+
             }
         </td>
         <td>
@@ -73,25 +79,33 @@
             @Html.DisplayFor(modelItem => item.Attendant)
         </td>
         <td>
-            @if (item.dateRegister >= DateTime.Now && item.dateEndRegister <= DateTime.Now)
+            @if (item.dateRegister.ToShortDateString().CompareTo(DateTime.Now.ToShortDateString()) <= 0 && item.dateEndRegister.ToShortDateString().CompareTo(DateTime.Now.ToShortDateString()) >= 0)
             {
                 <p style="color:white; text-align:center;display:block;background-color:darkgreen;border-radius:13px 13px;font-size:12px">Đang mở đăng ký</p>
             }
-            else{ 
-            
-                <p style="color:white; text-align:center;display:block;background-color:darkgray;border-radius:13px 13px;font-size:12px">Đã đóng đăng ký</p>
+            else
+            {
+                if (item.dateEndRegister.ToShortDateString().CompareTo(DateTime.Now.ToShortDateString()) < 0)
+                {
+                    <p style="color:white; text-align:center;display:block;background-color:darkgray;border-radius:13px 13px;font-size:12px">Đã đóng đăng ký</p>
+                    
+                }
+                else
+                {
+                    <p style="color:white; text-align:center;display:block;background-color:cornflowerblue;border-radius:13px 13px;font-size:12px">Chưa tới ngày mở</p>
+                }
             }
             
+            
         </td>
-        <td>
-            <a href=" @Url.Action("Edit", "Admin", new { id = item.idEvent } )" > <span class="glyphicon glyphicon-pencil"></span></a> |
-            <a href=" @Url.Action("Details", "Admin", new { id = item.idEvent })" > <span class="glyphicon glyphicon-list-alt"></span></a> |
-            <a href="@Url.Action("Delete","Admin" ,new { id = item.idEvent })"><span class="glyphicon glyphicon-remove"></span></a>
+        <td class="Action">
+            <a class="Sua" href=" @Url.Action("Edit", "Admin", new { id = item.idEvent } )" style="display:inline-block;border-radius:5px 5px; background-color:lawngreen;color:white;width:20px"><span class="glyphicon glyphicon-pencil"></span></a> |
+            <a class="Chitiet" href=" @Url.Action("Details", "Admin", new { id = item.idEvent })" style="display:inline-block;border-radius:5px 5px;background-color:orange;color:white;width:20px"><span class="glyphicon glyphicon-list-alt"></span></a> |
+            <a class="Xoa" href="@Url.Action("Delete","Admin" ,new { id = item.idEvent })" style="display:inline-block;border-radius:5px 5px;background-color:red;color:white;width:20px"><span class="glyphicon glyphicon-remove"></span></a>
         </td>
     </tr>
 }
         </tbody>
        </table>
-    <a class="themhoatdong" href="@Url.Action("ThemMoiHD", "Admin")"><span class="glyphicon glyphicon-plus-sign" style="color:white;font-size:20px"></span><p style="font-size:20px">THÊM HOẠT ĐỘNG</p></a>
-<p id="demo"></p>
+   
 
