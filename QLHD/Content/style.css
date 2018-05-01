@@ -1,5 +1,12 @@
 *{padding:0; margin:0;}
 
+.logo-section img {
+    width: 38px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+
 textarea#content {
     width: 467px;
     height: 93px;
@@ -269,7 +276,8 @@ li.slidebar-menu-item.arrow-down {}
     width: 82.8%;
     position: relative;
     left: 17.2%;
-    background: none;
+    background: white;
+    height:100%;
     top: 50px;
     overflow-x: hidden;
 }
@@ -323,7 +331,7 @@ header.main-header {
     font-size: 27px;
     float: left;
     padding-top: 6px;
-    padding-left: 31px;
+    padding-left: 41px;
     font-family: 'Baloo Chettan', cursive;
 }
 
